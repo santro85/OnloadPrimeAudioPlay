@@ -13,7 +13,6 @@
    <meta name="description" content="">
    <link rel="icon" type="image/png" sizes="16x16" href="https://santro85.github.io/OnloadPrimeAudioPlay/">
    <link rel="stylesheet" href="./Amazon_files/style.css">
-   <script src="./Amazon_files/js/musquito.js"></script>
 
 </head>
 
@@ -56,53 +55,18 @@
             .fromTo(".burst", { y: 50 }, { y: 0, autoAlpha: 1, duration: 1 }, "-=1")
             .fromTo(".cta", { delay: 1, y: 30 }, { autoAlpha: 1, ease: Power1.easeOut, y: 0, duration: 0.5 },)
 
-//          if (typeof beepTone.loop == 'boolean') {
-//             beepTone.loop = true;
-//          }
-//          else {
-//             beepTone.addEventListener('ended', function () {
-//                this.currentTime = 0;
-//                this.play();
-//             }, false);
-//          }
+         if (typeof beepTone.loop == 'boolean') {
+            beepTone.loop = true;
+         }
+         else {
+            beepTone.addEventListener('ended', function () {
+               this.currentTime = 0;
+               this.play();
+            }, false);
+         }
 
-//          beepTone.play();
+         beepTone.play();
          
-          $buzz.play('./Amazon_files/TonePaymentSuccess.mp3');
-         
-//           $buzz.setup({
-//             src: {
-//                'welcome': {
-//                   url: 'https://ttoyeti.s3.ap-south-1.amazonaws.com/sound_notifications/TonePaymentSuccess.mp3',
-//                   stream: true
-//                },
-//                'sprite': {
-//                   url: 'https://ttoyeti.s3.ap-south-1.amazonaws.com/sound_notifications/TonePaymentSuccess.mp3',
-//                   sprite: {
-//                      "gun": [
-//                         0,
-//                         0.48108843537414964
-//                      ],
-//                      "greenade": [
-//                         2,
-//                         2.4290249433106577
-//                      ],
-//                      "rocket": [
-//                         4,
-//                         4.672018140589569
-//                      ]
-//                   }
-//                }
-//             },
-//             volume: 0.5,
-//             maxNodesPerSource: 20,
-//             cleanUpInterval: 10,
-//             oninit: () => {
-//                $buzz.play('#welcome');
-//             },
-//             ondone: () => console.log('Audio engine terminated')
-//          });
-
       });
    </script>
 </body>
