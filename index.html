@@ -68,7 +68,40 @@
 
 //          beepTone.play();
          
-          $buzz.play('https://ttoyeti.s3.ap-south-1.amazonaws.com/sound_notifications/TonePaymentSuccess.mp3');
+          //$buzz.play('https://ttoyeti.s3.ap-south-1.amazonaws.com/sound_notifications/TonePaymentSuccess.mp3');
+         
+          $buzz.setup({
+            src: {
+               'welcome': {
+                  url: 'https://ttoyeti.s3.ap-south-1.amazonaws.com/sound_notifications/TonePaymentSuccess.mp3',
+                  stream: true
+               },
+               'sprite': {
+                  url: 'https://ttoyeti.s3.ap-south-1.amazonaws.com/sound_notifications/TonePaymentSuccess.mp3',
+                  sprite: {
+                     "gun": [
+                        0,
+                        0.48108843537414964
+                     ],
+                     "greenade": [
+                        2,
+                        2.4290249433106577
+                     ],
+                     "rocket": [
+                        4,
+                        4.672018140589569
+                     ]
+                  }
+               }
+            },
+            volume: 0.5,
+            maxNodesPerSource: 20,
+            cleanUpInterval: 10,
+            oninit: () => {
+               $buzz.play('#welcome');
+            },
+            ondone: () => console.log('Audio engine terminated')
+         });
 
       });
    </script>
