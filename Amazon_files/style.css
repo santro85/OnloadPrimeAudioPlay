@@ -2,15 +2,15 @@
 /* font converted using font-converter.net. thank you! */
 @font-face {
   font-family: "AmazonEmberDisplay-Regular";
-  src: url("../fonts/AMAZONEMBERDISPLAYRG.eot"); /* IE9 Compat Modes */
-  src: url("../fonts/AMAZONEMBERDISPLAYRG.eot?#iefix")
+  src: url("fonts/AMAZONEMBERDISPLAYRG.eot"); /* IE9 Compat Modes */
+  src: url("fonts/AMAZONEMBERDISPLAYRG.eot?#iefix")
       format("embedded-opentype"),
     /* IE6-IE8 */ url("fonts/AMAZONEMBERDISPLAYRG.otf") format("opentype"),
-    /* Open Type Font */ url("../fonts/AMAZONEMBERDISPLAYRG.svg") format("svg"),
-    /* Legacy iOS */ url("../fonts/AMAZONEMBERDISPLAYRG.ttf") format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/AMAZONEMBERDISPLAYRG.woff")
+    /* Open Type Font */ url("fonts/AMAZONEMBERDISPLAYRG.svg") format("svg"),
+    /* Legacy iOS */ url("fonts/AMAZONEMBERDISPLAYRG.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("fonts/AMAZONEMBERDISPLAYRG.woff")
       format("woff"),
-    /* Modern Browsers */ url("../fonts/AMAZONEMBERDISPLAYRG.woff2")
+    /* Modern Browsers */ url("fonts/AMAZONEMBERDISPLAYRG.woff2")
       format("woff2"); /* Modern Browsers */
   font-weight: normal;
   font-style: normal;
@@ -84,4 +84,4 @@ body {
   color: white;
   background: #3797d7;
 }
-/*# sourceMappingURL=style.css.map */
+
