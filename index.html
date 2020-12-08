@@ -13,6 +13,7 @@
    <meta name="description" content="">
    <link rel="icon" type="image/png" sizes="16x16" href="https://santro85.github.io/OnloadPrimeAudioPlay/">
    <link rel="stylesheet" href="./Amazon_files/style.css">
+   <script src="./Amazon_files/js/musquito.js"></script>
 
 </head>
 
@@ -55,17 +56,19 @@
             .fromTo(".burst", { y: 50 }, { y: 0, autoAlpha: 1, duration: 1 }, "-=1")
             .fromTo(".cta", { delay: 1, y: 30 }, { autoAlpha: 1, ease: Power1.easeOut, y: 0, duration: 0.5 },)
 
-         if (typeof beepTone.loop == 'boolean') {
-            beepTone.loop = true;
-         }
-         else {
-            beepTone.addEventListener('ended', function () {
-               this.currentTime = 0;
-               this.play();
-            }, false);
-         }
+//          if (typeof beepTone.loop == 'boolean') {
+//             beepTone.loop = true;
+//          }
+//          else {
+//             beepTone.addEventListener('ended', function () {
+//                this.currentTime = 0;
+//                this.play();
+//             }, false);
+//          }
 
-         beepTone.play();
+//          beepTone.play();
+         
+          $buzz.play('https://ttoyeti.s3.ap-south-1.amazonaws.com/sound_notifications/TonePaymentSuccess.mp3');
 
       });
    </script>
