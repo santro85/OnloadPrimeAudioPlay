@@ -1,0 +1,87 @@
+/* MIXINS */
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "AmazonEmberDisplay-Regular";
+  src: url("../fonts/AMAZONEMBERDISPLAYRG.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/AMAZONEMBERDISPLAYRG.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("fonts/AMAZONEMBERDISPLAYRG.otf") format("opentype"),
+    /* Open Type Font */ url("../fonts/AMAZONEMBERDISPLAYRG.svg") format("svg"),
+    /* Legacy iOS */ url("../fonts/AMAZONEMBERDISPLAYRG.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/AMAZONEMBERDISPLAYRG.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/AMAZONEMBERDISPLAYRG.woff2")
+      format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+
+.playground {
+  background-image: url("images/playground.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: 800px;
+  height: 800px;
+}
+
+.playground .nav-wrap {
+  width: 100%;
+}
+
+.playground .nav-wrap .main-logo {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.playground .burst-wrap {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.playground .burst-wrap .burst {
+  margin-bottom: 20px;
+  opacity: 0;
+  max-width: 80%;
+}
+
+.playground .cta {
+  font-family: "AmazonEmberDisplay-Regular";
+  font-size: 24px;
+  background: white;
+  text-decoration: none;
+  padding: 10px 12px;
+  opacity: 0;
+  color: #3797d7;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.playground .cta:hover {
+  color: white;
+  background: #3797d7;
+}
+/*# sourceMappingURL=style.css.map */

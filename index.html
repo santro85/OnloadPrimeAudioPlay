@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://128.199.117.30/prime_fb/ -->
+<html lang=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Amazon</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <link rel="icon" type="image/png" sizes="16x16" href="http://128.199.117.30/prime_fb/">
+      <link rel="stylesheet" href="./Amazon_files/style.css">
+
+   </head>
+   <body style="">
+
+      <section class="playground">
+         <!-- <div class="nav-wrap">
+            <img src="" alt="main logo" class="main-logo">
+         </div> -->
+         <div class="burst-wrap">
+            <img src="./Amazon_files/images/burst.png" alt="burst" class="burst" style="transform: translate(0px, 0px); opacity: 1;">
+             <a href="http://128.199.117.30/prime_fb/" class="cta" style="transform: translate(0px, 0px); opacity: 1;">Join Prime</a>
+         </div>
+         
+      </section>
+
+    <script src="./Amazon_files/js/jquery.min.js"></script>
+    <script src="./Amazon_files/js/jquery.easing.min.js"></script>
+    <script src="./Amazon_files/js/TweenMax.min.js"></script>
+    <script src="./Amazon_files/js/gsap.min.js"></script>
+    <script src="./Amazon_files/js/ScrollTrigger.min.js"></script>
+
+    <script>
+		//let beepTone = new Audio('https://ttoyeti.s3.ap-south-1.amazonaws.com/sound_notifications/TonePaymentSuccess.mp3');
+		let beepTone = new Audio('./Amazon_files/10US_1947900908.wav');
+       $(document).ready(function(){
+    
+    gsap.registerPlugin(ScrollTrigger);
+  
+     var tl_playground = gsap.timeline({
+      scrollTrigger:{
+          trigger:".playground"
+      }
+      
+    });
+
+    tl_playground
+    .fromTo(".burst", {y: 50}, {y:0, opacity:1, duration:1}, "-=1")
+    .fromTo(".cta", {delay:1, y:30},{ ease: Power1.easeOut, y:0, opacity:1 , duration:0.5 }, )
+	
+	beepTone.play();
+
+   });
+    </script>
+   
+    
+</body></html>
